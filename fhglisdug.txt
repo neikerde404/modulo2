@@ -1,0 +1,78 @@
+//Pide al usuario su nombre usando prompt() y guárdalo en una variable. Luego, muestra un mensaje de saludo que incluya su nombre.
+let nombreUsuario = prompt(" ingresa tu nombre: ");
+
+if (nombreUsuario) {
+  alert("Hola " + nombreUsuario + " Bienvenido");
+} else {
+  alert("lo siento no se a detectado un nombre");
+}
+
+//Pide al usuario dos números usando prompt(). Conviértelos a tipo numérico y muestra la suma en la consola o en un alert
+
+let numero1 = prompt("ingrese un numero: ");
+let numero2 = prompt("ingrese un segundo numero: ");
+
+
+numero1 = parseFloat(numero1);
+numero2 = parseFloat(numero2);
+
+if (!isNaN(numero1) && !isNaN(numero2)) {
+  let suma = numero1 + numero2;
+  console.log("la suma de tus numero: " + suma);
+
+} else {
+
+  console.log("lo siento no se a introdusido ningon numero.");
+}
+
+//Pide al usuario su edad usando prompt(). Guarda este valor en una variable.
+
+let edadUsuario = prompt("Por favor, ingresa tu edad: ");
+alert("gracias guardado")
+
+//Declara variables para guardar el nombre, la especie y la edad de una mascota. Asígnales valores y luego muéstralos concatenados en un mensaje
+
+
+let nombreMascota = prompt("ingrece el nombre de su mascota: ");
+let especieMascota = prompt("cual es su especie: ");
+let edadMascota = prompt("la edad de su mascota: ");
+
+let mensaje = `La mascota se llama ${nombreMascota}, es un ${especieMascota} y tiene ${edadMascota} años.`;
+
+console.log(mensaje);
+
+//Declara una variable con un valor numérico (por ejemplo, 0 o 1). Conviértela a booleano e imprime el resultado para ver cómo JavaScript maneja la conversión
+
+
+let edad = prompt("introduce tu edad:");
+
+
+edad = parseInt(edad);
+
+if (edad >= 20) {
+  alert("Tienes " + edad + " años ya puedes condusir");
+} else {
+  alert("Tienes " + edad + " años. No eres mayor de edad.");
+}
+
+ //Pide un número al usuario con prompt(). Usa if-else if-else para determinar si el número es positivo, negativo o cero, y muestra el resultado
+ 
+ let numero = prompt("introduce tu numero:");
+ 
+ if (numero > 0) {
+     alert("el numero es positido");
+ } else {
+     alert(" el numero no asido colocado");
+ }  if (numero < 0) {
+     alert( "el numero es menor") 
+ }
+ 
+ //Pide al usuario que ingrese una contraseña con prompt(). Si la contraseña es "secreto123", muestra "Acceso concedido". De lo contrario, muestra "Acceso denegado"
+ 
+ const contraseña = prompt("cual es su contraseña:");
+
+if (contraseña  = qwertyuiopasdfghjklñzxcvbnm) {
+  alert("Acceso concedido");
+} else {
+  alert("Acceso negado");
+}
